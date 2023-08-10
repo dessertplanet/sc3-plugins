@@ -260,6 +260,10 @@ BUILD_PLUGIN(OteyPianoUGens "OteyPianoUGens/OteyPiano.cpp;OteyPianoUGens/dwgs.cp
 # PitchDetectionUGens
 file(GLOB PitchDetectionSources PitchDetection/*cpp)
 
+
+set(FFTW3F_LIBRARY "/sdcard/code/fftw-3.3.10/api/fftw3.h")
+
+
 if(APPLE)
     set (PitchDetectionLibs "-framework Accelerate")
 else()
